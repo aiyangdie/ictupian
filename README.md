@@ -1,101 +1,41 @@
-<p align="center"><img src="assets/covers/31-ictupian.jpg" alt="ictupian 项目封面" width="100%"></p>
+<p align="center"><img src="assets/covers/31-ictupian.jpg" alt="智能压缩 项目封面" width="100%"></p>
 
-<div align="center">
+<h1 align="center">IC 智能图片压缩</h1>
 
-# 🖼️ IC智能图片压缩
+<p align="center">WebP / PNG / JPEG 都能压，常见体积缩减 50–80%，浏览器端处理</p>
 
-**高质量在线图片压缩工具 — 纯前端处理，隐私安全**
+<p align="center">
+  <a href="http://img.aikex.ink/">在线使用</a>
+</p>
 
-[![GitHub](https://img.shields.io/badge/GitHub-Project-blue?logo=github)](https://github.com/aiyangdie/ictupian)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+## 简介
 
-</div>
+一个轻量的在线图片压缩工具，主打「上传前先瘦身」：把大图压到能直接用于公众号、详情页和投稿的体积，画质肉眼基本无感。所有处理都在本地浏览器完成，图片不会离开你的电脑。
 
----
+## 功能
 
-## 📌 项目简介
+- **多格式支持**：JPEG、PNG、WebP 输入，可输出为更适合网络的格式
+- **体积对比**：压缩前后大小一目了然
+- **批量处理**：多张图片一起压，结果可批量导出
+- **纯本地**：不传服务器，断网也能用
+- **零依赖**：打开网页即用
 
-IC智能图片压缩是一款纯前端实现的在线图片压缩工具，所有压缩处理均在浏览器本地完成，图片不会上传至任何服务器，充分保障用户隐私。支持批量压缩、实时进度追踪、一键打包下载，压缩率可达 50%-80%，同时保持原始文件名和 EXIF 信息。
+## 技术栈
 
----
+HTML5 Canvas · JavaScript · 浏览器端编码（无后端）
 
-## ✨ 核心特性
+## 使用
 
-- 🗜️ **智能有损压缩** — 体积减少 50%-80%，视觉质量几乎无损
-- 🔒 **纯前端处理** — 图片不上传服务器，隐私零泄露
-- 📦 **批量压缩** — 支持多文件同时处理，实时显示总进度
-- 📥 **一键打包下载** — 多文件自动打包为 ZIP，单文件直接下载
-- 🏷️ **保留原始文件名** — 压缩后文件名不变，方便管理
-- 📊 **详细压缩报告** — 显示原始大小、压缩后大小、节省百分比
-- 🖼️ **实时缩略图预览** — 压缩结果附带图片预览
-- ⚡ **WebWorker 加速** — 压缩任务在独立线程运行，不阻塞 UI
-- 📱 **拖拽上传** — 支持拖拽文件到上传区域，操作便捷
-- 🎨 **响应式设计** — 完美适配桌面端与移动端
+打开页面 → 选择或拖入图片 → 调整压缩质量 → 下载结果。
 
----
-
-## 🛠️ 技术栈
-
-| 技术 | 用途 |
-|------|------|
-| HTML5 | 页面结构与文件上传 API |
-| CSS3 | 样式与响应式布局（Flexbox、渐变进度条） |
-| JavaScript (ES6+) | 压缩逻辑、文件处理、异步控制流 |
-| [browser-image-compression](https://github.com/Donaldcwl/browser-image-compression) | 核心图片压缩引擎 |
-| [JSZip](https://stuk.github.io/jszip/) | 多文件 ZIP 打包下载 |
-| Font Awesome 6.0 | 图标系统 |
-
----
-
-## 🚀 快速开始
-
-### 前置条件
-
-- 现代浏览器（Chrome / Firefox / Safari / Edge）
-- 无需安装任何依赖
-
-### 安装步骤
-
-```bash
-git clone https://github.com/aiyangdie/ictupian.git
-cd ictupian
-```
-
-### 运行命令
-
-```bash
-# 方式一：直接打开
-start index.html
-
-# 方式二：VSCode Live Server（推荐）
-
-# 方式三：Python 简易服务器
-python -m http.server 8080
-```
-
-### 在线演示
-
-🔗 [IC智能图片压缩](https://ic.aikex.ink)
-
----
-
-## 📂 项目结构
+## 项目结构
 
 ```
-ictupian/
-├── index.html                       # 主页面
-├── style.css                        # 样式文件（进度条、卡片布局）
-├── script.js                        # 压缩逻辑、拖拽上传、ZIP打包
-├── favicon.ico                      # 网站图标
-├── CNAME                            # 自定义域名配置
-├── wechat_2025-04-29_044012_213.png # 演示截图
-└── README.md                        # 项目说明文档
+index.html      页面
+css/style.css   样式
+js/             压缩逻辑
 ```
 
----
+## 许可证
 
-## 🤝 贡献与许可证
-
-欢迎提交 Issue 和 Pull Request 来帮助改进项目！
-
-本项目采用 **MIT License** 开源协议，详情请见 [LICENSE](LICENSE) 文件。
+仓库未附 LICENSE 文件，使用与分发请先联系作者确认。
