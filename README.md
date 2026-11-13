@@ -1,3 +1,5 @@
+<p align="center"><img src="assets/covers/31-ictupian.jpg" alt="ictupian 项目封面" width="100%"></p>
+
 <div align="center">
 
 # 🖼️ IC智能图片压缩
